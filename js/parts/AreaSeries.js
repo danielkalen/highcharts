@@ -315,6 +315,7 @@ seriesType('area', 'line', {
 							prop[3],
 							color(prop[2]).setOpacity(pick(options.fillOpacity, 0.75)).get()
 						),
+						['fill-opacity']: pick(options.fillOpacity, 0.75),
 						/*= } =*/
 						zIndex: 0 // #1069
 					}).add(series.group);

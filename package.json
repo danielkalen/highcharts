@@ -1,5 +1,5 @@
 {
-  "name": "highcharts",
+  "name": "@danielkalen/highcharts",
   "version": "5.0.2",
   "description": "JavaScript charting framework",
   "main": "lib/highcharts",

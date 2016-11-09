@@ -191,7 +191,7 @@ Axis.prototype.normalizeTimeTickInterval = function (tickInterval, unitsOption) 
 			[1, 2, 5, 10, 15, 30]
 		], [
 			'hour',
-			[1, 2, 3, 4, 6, 8, 12]
+			[1, 2, 3, 4, 6, 8, 12, 24]
 		], [
 			'day',
 			[1, 2]
