@@ -11,7 +11,7 @@
 /js/adapters/prototype-adapter.js
 /js/modules/exporting.js
 /build
-/code
+# /code
 /internal-docs
 /tools/jsdoc/ink-docstrap
 /.project
