@@ -1,5 +1,5 @@
 /**
- * @license Highcharts JS v5.0.2-modified (2016-11-08)
+ * @license Highcharts JS v5.0.2-modified (2016-12-09)
  *
  * 3D features for Highcharts JS
  *

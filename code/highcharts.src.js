@@ -1,5 +1,5 @@
 /**
- * @license Highcharts JS v5.0.2-modified (2016-11-08)
+ * @license Highcharts JS v5.0.2-modified (2016-12-09)
  *
  * (c) 2009-2016 Torstein Honsi
  *
@@ -19289,7 +19289,7 @@
                                     prop[3],
                                     color(prop[2]).setOpacity(pick(options.fillOpacity, 0.75)).get()
                                 ),
-                                ['fill-opacity']: pick(options.fillOpacity, 0.75),
+                                'fill-opacity': pick(options.fillOpacity, 0.75),
 
                                 zIndex: 0 // #1069
                             }).add(series.group);
