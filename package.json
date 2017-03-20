@@ -3,6 +3,12 @@
   "version": "5.0.4-dist",
   "description": "JavaScript charting framework",
   "main": "lib/highcharts",
+  "browser": {
+    "./dist": "dist/highcharts/code/highcharts.js",
+    "./debug": "dist/highcharts/code/highcharts.src.js",
+    "./modules": "dist/highcharts/code/modules",
+    "./src": "js/masters/"
+  },
   "author": "Highsoft AS <support@highcharts.com> (http://www.highcharts.com/about)",
   "repository": {
     "type": "git",
@@ -31,6 +37,7 @@
     "browserify": "^12.0.1",
     "closurecompiler": "^1.5.2",
     "colors": "~1.1.2",
+    "eslint": "^3.18.0",
     "google-closure-compiler-js": "^20160916.0.0",
     "grunt": "^0.4.5",
     "grunt-jslint": "^1.1.12",

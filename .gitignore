@@ -10,7 +10,7 @@
 /js/adapters/mootools-adapter.js
 /js/adapters/prototype-adapter.js
 /js/modules/exporting.js
-/build
+# /build
 # /code
 /internal-docs
 /tools/jsdoc/ink-docstrap

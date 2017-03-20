@@ -1,0 +1,12 @@
+/*
+ Highcharts JS v5.0.2-modified (2017-03-20)
+
+ (c) 2009-2016 Torstein Honsi
+
+ License: www.highcharts.com/license
+*/
+(function(e){"object"===typeof module&&module.exports?module.exports=e:e(Highcharts)})(function(e){(function(f){f.extend(f.SVGElement.prototype,{init:function(c,b){this.element={nodeName:b,attributes:{},childNodes:[],setAttribute:function(a,b){this.attributes[a]=b},removeAttribute:function(a){delete this.attributes[a]},appendChild:function(a){this.childNodes.push(a);a.parentNode=this},insertBefore:function(a,b){this.childNodes.splice(this.childNodes.indexOf(b),0,a)},removeChild:function(a){this.childNodes.splice(this.childNodes.indexOf(a),
+1);delete a.parentNode},getElementsByTagName:function(){return[]},cloneNode:function(){return this},style:{}};this.renderer=c;this.dSetter=function(a){a.join=!1;return a}},getBBox:function(){var c=this.renderer.ctx;c.font="12px Arial";c.fillStyle="blue";return{x:0,y:0,width:c.measureText(this.element.innerHTML).width,height:20}}});var e={path:function(c,b,a){var d=[];a.d.forEach(function(a){"M"===a?d.push(["moveTo"]):"L"===a?d.push(["lineTo"]):"C"===a?d.push(["bezierCurveTo"]):"Z"===a?d.push(["closePath"]):
+d[d.length-1].push(parseFloat(a))});b.beginPath();d.forEach(function(a){b[a[0]].apply(b,a.slice(1))})},rect:function(c,b,a){b.rect(a.x,a.y,a.width,a.height)},text:function(c,b,a){c.innerHTML&&(b.font="12px Arial",b.fillStyle="blue",c.bBox=b.measureText(c.innerHTML),b.fillText(c.innerHTML,a.x,a.y))}};f.extend(f.SVGRenderer.prototype,{init:function(c,b,a){var d,e;d=this.createElement("svg").attr({version:"1.1"});e=d.element;this.canvas=f.win.doc.createElement("canvas");c.appendChild(this.canvas);this.ctx=
+this.canvas.getContext("2d");this.isSVG=!0;this.box=e;this.boxWrapper=d;this.alignedObjects=[];this.defs=this.createElement("defs").add();this.gradients={};this.cache={};this.setSize(b,a,!1)},setSize:function(c,b){this.canvas.setAttribute("width",c);this.canvas.setAttribute("height",b)},draw:function(){function c(a){Array.prototype.forEach.call(a.childNodes,c);var d=a.attributes;d&&((e[a.nodeName]||function(){})(a,b,d),d["stroke-width"]&&(b.lineWidth=d["stroke-width"],b.strokeStyle=d.stroke,b.stroke()),
+d.fill&&(b.fillStyle=d.fill,b.fill()))}var b=this.ctx;c(this.box)},buildText:function(c){c.element.innerHTML=c.textStr}})})(e)});
