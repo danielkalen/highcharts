@@ -1,6 +1,6 @@
 {
   "name": "@danielkalen/highcharts",
-  "version": "5.0.4-dist",
+  "version": "5.0.4-dist3",
   "description": "JavaScript charting framework",
   "main": "lib/highcharts",
   "browser": {
