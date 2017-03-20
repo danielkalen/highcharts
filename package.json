@@ -1,6 +1,6 @@
 {
   "name": "@danielkalen/highcharts",
-  "version": "5.0.4",
+  "version": "5.0.4-dist",
   "description": "JavaScript charting framework",
   "main": "lib/highcharts",
   "author": "Highsoft AS <support@highcharts.com> (http://www.highcharts.com/about)",
