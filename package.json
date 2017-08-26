@@ -1,6 +1,6 @@
 {
   "name": "@danielkalen/highcharts",
-  "version": "5.0.4-dist3",
+  "version": "5.0.4-dist4",
   "description": "JavaScript charting framework",
   "main": "lib/highcharts",
   "browser": {
@@ -28,6 +28,8 @@
     "errors",
     "gfx",
     "js",
+    "code",
+    "css",
     "lib"
   ],
   "devDependencies": {
